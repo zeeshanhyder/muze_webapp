@@ -1,0 +1,13 @@
+<div class="layout-row flex music-player">
+  <div class="player-controls play-pause" ng-click="$ctrl.musicPlayer.togglePlay()">
+    <i class="mdi play-button" ng-class="$ctrl.musicPlayer.playState?'mdi-pause':'mdi-play'"></i>
+  </div>
+  <div class="player-labels">
+    <div class="song-title">Song Name</div>
+    <div class="song-info">
+        <p class="margin-0 margin-r-10">Album,</p>
+        <p class="margin-0 margin-r-10">Artist,</p>
+        <p class="margin-0 margin-r-10">Artist</p>
+    </div>
+  </div>
+</div>
