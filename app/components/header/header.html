@@ -7,7 +7,7 @@
       <ad-unit class="component"></ad-unit>
     </div>
   </div>
-  <div class="header--subheader-bottom">
+  <div class="header--subheader-bottom" ng-if="$ctrl.currentState != 'location-selection' ">
     <div class="subheader-bottom--toolbar">
         <div class="layout-row flex flex-rem">
           <div class="toolbar--menu-button-container flex layout-align-start-center">
@@ -40,7 +40,7 @@
             <a class="flex flex-rem">
               <i class="mdi mdi-account"></i>
             </a>
-            <a class="flex flex-rem">
+            <a class="flex flex-rem" ui-sref="location-selection">
               <i class="mdi mdi-map-marker"></i>
             </a>
           </div>

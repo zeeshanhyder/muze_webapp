@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html class="flex layout-column flex-rem" style="min-height: 100%">
   <head>
     <base href="/">
     <meta charset="utf-8">
@@ -10,16 +10,17 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/1.7.22/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="/app/third-party/uib-modal/uib-modal.css" media="all" rel="stylesheet" type="text/css">
 
 
 
-    <link rel="stylesheet" href="styles/app-08f04c2414.css">
+    <link rel="stylesheet" href="styles/app-5c41a96c38.css">
   </head>
 
 
-  <body ng-app="muze" class="">
+  <body ng-app="muze" class="flex flex-rem layout-column">
     <app-header></app-header>
-    <ui-view class="component"></ui-view>
+    <ui-view class="component flex-rem"></ui-view>
     <footer class="pad-box-10 app-footer">
       <div class="flex pad-box-10 layout-column">
         <div class="app-store-button play-store"></div>
@@ -44,7 +45,12 @@
     </footer>
   </body>
 
-  <script src="scripts/vendor-01834bed2d.js"></script>
 
-  <script src="scripts/app-53ed9f84ee.js"></script>
+
+  <script src="scripts/vendor-086fdda941.js"></script>
+
+  <script src="scripts/app-e14f35d8b0.js"></script>
+
+  <!--<script src="/app/third-party/uib-modal/uib-modal.min.js"></script>
+  <script src="/app/third-party/uib-modal/uib-modal-tpl.min.js"></script>-->
 </html>

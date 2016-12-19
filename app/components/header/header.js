@@ -15,8 +15,19 @@
 
   /** @ngInject */
 
-  function HeaderController(){
-    this.componentName = 'header';
+  function HeaderController($scope, locationService, $state, $transitions){
+    var vm = this;
+    vm.componentName = 'header';
+
+    $transitions.onStart({}, function($transition$){
+      vm.currentState = $transition$.$to().name;
+    });
+
+    function init(){
+
+    }
+    init();
+
   }
 
 })();
