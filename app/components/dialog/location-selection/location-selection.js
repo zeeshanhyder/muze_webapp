@@ -29,6 +29,7 @@
         .then(function(data){
           // later on show venues to user, but right now save it and set it default
           locationService.saveVenueList(data.venues);
+          vm.hasVenues = true;
         });
       }, function(err){
       });

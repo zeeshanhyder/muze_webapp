@@ -4,7 +4,7 @@
       <option selected="" disabled="" value="">Select City</option>
     </select>
   </div>
-  <div class="service-select flex layout-row" ng-if="$ctrl.citySelected" style="padding:20px;">
+  <div class="service-select flex layout-row" ng-if="$ctrl.citySelected && $ctrl.hasVenues" style="padding:20px;">
 
       <div ng-click="$ctrl.closeModal()" class="service-option icon-button">
         <img style="height:48px; width: 48px;">

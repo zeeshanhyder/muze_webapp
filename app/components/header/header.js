@@ -15,13 +15,15 @@
 
   /** @ngInject */
 
-  function HeaderController($scope, locationService, $state, $transitions){
+  function HeaderController($scope,locationService, $state){
     var vm = this;
     vm.componentName = 'header';
 
-    $transitions.onStart({}, function($transition$){
-      vm.currentState = $transition$.$to().name;
-    });
+    $scope.$watch(function(){
+        return $state.$current.name
+    }, function(newVal, oldVal){
+        vm.currentState = newVal;
+    })
 
     function init(){
 
